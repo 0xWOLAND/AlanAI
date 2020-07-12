@@ -15,6 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlM-21-TP4">
+                                <rect key="frame" x="107" y="431" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="y4Y-mm-eEk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RwU-Rg-cSf">
+                                <rect key="frame" x="107" y="475" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NOl-Ry-zzL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="0mh-sz-Eff" userLabel="Welcome Text">
                                 <rect key="frame" x="104.5" y="164" width="205.5" height="211.5"/>
                                 <subviews>
@@ -37,11 +53,36 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-kf-tl0">
+                                <rect key="frame" x="107" y="609" width="200" height="36"/>
+                                <color key="backgroundColor" red="0.424082458" green="0.75771075489999995" blue="0.46661871669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ySD-4g-hps"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-Ef-1KU">
+                                <rect key="frame" x="157" y="650" width="150" height="30"/>
+                                <state key="normal" title="Create a new account">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="RwU-Rg-cSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="99r-8J-VUY"/>
                             <constraint firstItem="0mh-sz-Eff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NxH-St-wdD"/>
+                            <constraint firstItem="Wdt-kf-tl0" firstAttribute="top" secondItem="RwU-Rg-cSf" secondAttribute="bottom" constant="100" id="Qg8-J0-dtB"/>
+                            <constraint firstItem="Wdt-kf-tl0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TGV-Uv-l97"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQJ-Ef-1KU" secondAttribute="trailing" constant="107" id="ebP-sO-XB4"/>
                             <constraint firstItem="0mh-sz-Eff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="lkm-H1-cXm"/>
+                            <constraint firstItem="AQJ-Ef-1KU" firstAttribute="top" secondItem="Wdt-kf-tl0" secondAttribute="bottom" constant="5" id="nAS-yp-aeC"/>
+                            <constraint firstItem="PlM-21-TP4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nX9-FU-UZ3"/>
+                            <constraint firstItem="RwU-Rg-cSf" firstAttribute="top" secondItem="PlM-21-TP4" secondAttribute="bottom" constant="10" id="nzw-0J-KEZ"/>
+                            <constraint firstItem="PlM-21-TP4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sO1-Ze-p5R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
