@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var password:UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
     @IBAction func createNewAccount(_ sender: Any) {
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        password.isSecureTextEntry = true
         loginButton.layer.cornerRadius = 15.0
     }
     

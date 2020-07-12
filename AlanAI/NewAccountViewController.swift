@@ -21,6 +21,8 @@ class NewAccountViewController: UIViewController {
         super.viewDidLoad()
         print("hello")
         createNewAccount.layer.cornerRadius = 15.0
+        password.isSecureTextEntry = true
+        confirmPassword.isSecureTextEntry = true
 
         // Do any additional setup after loading the view.
     }

@@ -98,6 +98,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="Wdt-kf-tl0" id="Peo-pG-3Zv"/>
+                        <outlet property="password" destination="RwU-Rg-cSf" id="6td-XE-713"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
