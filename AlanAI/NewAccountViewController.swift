@@ -10,8 +10,10 @@ import UIKit
 
 class NewAccountViewController: UIViewController {
 
+    @IBOutlet weak var createNewAccount: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        createNewAccount.layer.cornerRadius = 15.0
 
         // Do any additional setup after loading the view.
     }
