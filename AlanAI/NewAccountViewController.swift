@@ -59,12 +59,11 @@ class NewAccountViewController: UIViewController {
         else if password.text != confirmPassword.text    {
             sendAlert(msg: "Passwords do not match")
         }
-        
-        
-        
-        
-
     }
+    @IBAction func toLogin(_ sender: Any) {
+        performSegue(withIdentifier: "LoginSegue", sender: self)
+    }
+    
 //
     /*
     // MARK: - Navigation

@@ -113,14 +113,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3dQ-zn-Qa6">
-                                <rect key="frame" x="20" y="66.5" width="40" height="35"/>
-                                <color key="tintColor" red="0.424082458" green="0.75771075489999995" blue="0.46661871669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="JCo-zx-YqZ"/>
-                                    <constraint firstAttribute="height" constant="40" id="l61-vx-VKn"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="CrA-Sb-krL" userLabel="Create Account Title">
                                 <rect key="frame" x="100.5" y="144" width="213" height="90.5"/>
                                 <subviews>
@@ -195,15 +187,30 @@
                                     <action selector="createAccountOnClick:" destination="xvr-Js-oPO" eventType="touchUpInside" id="0zb-Oh-NBU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edR-VG-JwN">
+                                <rect key="frame" x="20" y="66.5" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="we4-zE-KBb"/>
+                                    <constraint firstAttribute="width" constant="50" id="wwQ-48-3rp"/>
+                                </constraints>
+                                <color key="tintColor" red="0.424082458" green="0.75771075489999995" blue="0.46661871669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="arrow.left" catalog="system">
+                                    <color key="titleColor" red="0.424082458" green="0.75771075489999995" blue="0.46661871669999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="toLogin:" destination="xvr-Js-oPO" eventType="touchUpInside" id="h4g-oZ-Ric"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginSegue" modalPresentationStyle="fullScreen" id="Iz7-he-kkT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3dQ-zn-Qa6" firstAttribute="leading" secondItem="OfT-V2-D82" secondAttribute="leading" constant="20" id="1S4-9e-gCm"/>
+                            <constraint firstItem="edR-VG-JwN" firstAttribute="top" secondItem="OfT-V2-D82" secondAttribute="top" constant="20" id="5TU-QF-2fe"/>
                             <constraint firstItem="eoT-5g-N0r" firstAttribute="top" secondItem="CrA-Sb-krL" secondAttribute="bottom" constant="80" id="K8e-Hw-u7P"/>
                             <constraint firstItem="OfT-V2-D82" firstAttribute="bottom" secondItem="NBk-IA-lD3" secondAttribute="bottom" constant="100" id="NDt-hO-8m8"/>
                             <constraint firstItem="eoT-5g-N0r" firstAttribute="centerX" secondItem="Oc5-Ie-ydD" secondAttribute="centerX" id="PFn-AD-cVG"/>
                             <constraint firstItem="CrA-Sb-krL" firstAttribute="centerX" secondItem="Oc5-Ie-ydD" secondAttribute="centerX" id="XB3-dT-9aV"/>
-                            <constraint firstItem="3dQ-zn-Qa6" firstAttribute="top" secondItem="OfT-V2-D82" secondAttribute="top" constant="20" id="kdE-Jk-Uqo"/>
+                            <constraint firstItem="edR-VG-JwN" firstAttribute="leading" secondItem="OfT-V2-D82" secondAttribute="leading" constant="20" id="dPJ-gH-5Mt"/>
                             <constraint firstItem="NBk-IA-lD3" firstAttribute="centerX" secondItem="Oc5-Ie-ydD" secondAttribute="centerX" id="qcN-z9-JwG"/>
                             <constraint firstItem="CrA-Sb-krL" firstAttribute="top" secondItem="OfT-V2-D82" secondAttribute="top" constant="100" id="sLV-RN-IoP"/>
                         </constraints>
