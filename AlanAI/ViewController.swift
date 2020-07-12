@@ -10,10 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func createNewAccount(_ sender: Any) {
+        performSegue(withIdentifier: "NewAccountSegue", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
 
 
 }

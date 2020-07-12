@@ -69,6 +69,10 @@
                                 <state key="normal" title="Create a new account">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createNewAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHb-zN-fgA"/>
+                                    <segue destination="xvr-Js-oPO" kind="presentation" identifier="NewAccountSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="TaI-5T-8wM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -90,7 +94,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+            <point key="canvasLocation" x="114" y="97"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lp2-oB-FaD">
+            <objects>
+                <viewController id="xvr-Js-oPO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oc5-Ie-ydD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="OfT-V2-D82"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNd-Uh-pE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="331"/>
         </scene>
     </scenes>
     <resources>
