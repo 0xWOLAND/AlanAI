@@ -138,35 +138,35 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-5g-N0r" userLabel="Account Info">
-                                <rect key="frame" x="107" y="334.5" width="200" height="290"/>
+                                <rect key="frame" x="107" y="314.5" width="200" height="354"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mfi-uo-DLo">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IH-Af-CC6">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IH-Af-CC6">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nh-KR-Vqo">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VlD-ZI-9eU">
                                         <rect key="frame" x="0.0" y="64" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nh-KR-Vqo">
+                                        <rect key="frame" x="0.0" y="128" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXa-o3-SwO">
-                                        <rect key="frame" x="0.0" y="128" width="200" height="34"/>
+                                        <rect key="frame" x="0.0" y="192" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-Xt-k2A">
-                                        <rect key="frame" x="0.0" y="192" width="200" height="34"/>
+                                        <rect key="frame" x="0.0" y="256" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-XN-uWA">
-                                        <rect key="frame" x="0.0" y="256" width="200" height="34"/>
+                                        <rect key="frame" x="0.0" y="320" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
@@ -190,12 +190,15 @@
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountOnClick:" destination="xvr-Js-oPO" eventType="touchUpInside" id="0zb-Oh-NBU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3dQ-zn-Qa6" firstAttribute="leading" secondItem="OfT-V2-D82" secondAttribute="leading" constant="20" id="1S4-9e-gCm"/>
-                            <constraint firstItem="eoT-5g-N0r" firstAttribute="top" secondItem="CrA-Sb-krL" secondAttribute="bottom" constant="100" id="K8e-Hw-u7P"/>
+                            <constraint firstItem="eoT-5g-N0r" firstAttribute="top" secondItem="CrA-Sb-krL" secondAttribute="bottom" constant="80" id="K8e-Hw-u7P"/>
                             <constraint firstItem="OfT-V2-D82" firstAttribute="bottom" secondItem="NBk-IA-lD3" secondAttribute="bottom" constant="100" id="NDt-hO-8m8"/>
                             <constraint firstItem="eoT-5g-N0r" firstAttribute="centerX" secondItem="Oc5-Ie-ydD" secondAttribute="centerX" id="PFn-AD-cVG"/>
                             <constraint firstItem="CrA-Sb-krL" firstAttribute="centerX" secondItem="Oc5-Ie-ydD" secondAttribute="centerX" id="XB3-dT-9aV"/>
@@ -206,7 +209,13 @@
                         <viewLayoutGuide key="safeArea" id="OfT-V2-D82"/>
                     </view>
                     <connections>
+                        <outlet property="confirmPassword" destination="Dug-XN-uWA" id="jNo-0C-g48"/>
                         <outlet property="createNewAccount" destination="NBk-IA-lD3" id="csY-g7-Lc0"/>
+                        <outlet property="email" destination="6nh-KR-Vqo" id="aJR-7Z-ScE"/>
+                        <outlet property="firstName" destination="0IH-Af-CC6" id="op1-ga-6rt"/>
+                        <outlet property="lastName" destination="VlD-ZI-9eU" id="zAU-SE-1Jp"/>
+                        <outlet property="password" destination="ZHE-Xt-k2A" id="01K-sy-0KH"/>
+                        <outlet property="phoneNumber" destination="dXa-o3-SwO" id="jcS-eZ-UwS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNd-Uh-pE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
