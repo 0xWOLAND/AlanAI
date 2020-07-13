@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65942B724BCEEA200788BC1 /* AlanSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65942B524BCED1800788BC1 /* AlanSDK.framework */; };
+		F65942B824BCEEA200788BC1 /* AlanSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F65942B524BCED1800788BC1 /* AlanSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6F7438D24BB7CCE0077B514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7438C24BB7CCE0077B514 /* AppDelegate.swift */; };
 		F6F7438F24BB7CCE0077B514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7438E24BB7CCE0077B514 /* SceneDelegate.swift */; };
 		F6F7439124BB7CCE0077B514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F7439024BB7CCE0077B514 /* ViewController.swift */; };
@@ -15,18 +17,16 @@
 		F6F7439924BB7CCE0077B514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F7439724BB7CCE0077B514 /* LaunchScreen.storyboard */; };
 		F6F743AE24BBA04D0077B514 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F743AD24BBA04D0077B514 /* NewAccountViewController.swift */; };
 		F6F743B324BBC3730077B514 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F743B224BBC3730077B514 /* MapViewController.swift */; };
-		F6F743B724BBCD090077B514 /* AlanSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F743B524BBCCBD0077B514 /* AlanSDK.framework */; };
-		F6F743B824BBCD090077B514 /* AlanSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6F743B524BBCCBD0077B514 /* AlanSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F6F743B924BBCD090077B514 /* Embed Frameworks */ = {
+		F65942B424BCEC2400788BC1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F6F743B824BBCD090077B514 /* AlanSDK.framework in Embed Frameworks */,
+				F65942B824BCEEA200788BC1 /* AlanSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F65942B524BCED1800788BC1 /* AlanSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlanSDK.framework; sourceTree = "<group>"; };
 		F6F7438924BB7CCE0077B514 /* AlanAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlanAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F7438C24BB7CCE0077B514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F7438E24BB7CCE0077B514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		F6F7439A24BB7CCE0077B514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F743AD24BBA04D0077B514 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		F6F743B224BBC3730077B514 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		F6F743B524BBCCBD0077B514 /* AlanSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlanSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,19 +52,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F743B724BBCD090077B514 /* AlanSDK.framework in Frameworks */,
+				F65942B724BCEEA200788BC1 /* AlanSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F65942B124BCEC2400788BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6F7438024BB7CCD0077B514 = {
 			isa = PBXGroup;
 			children = (
 				F6F743B424BBCC270077B514 /* Alan */,
 				F6F7438B24BB7CCE0077B514 /* AlanAI */,
 				F6F7438A24BB7CCE0077B514 /* Products */,
+				F65942B124BCEC2400788BC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +103,7 @@
 		F6F743B424BBCC270077B514 /* Alan */ = {
 			isa = PBXGroup;
 			children = (
-				F6F743B524BBCCBD0077B514 /* AlanSDK.framework */,
+				F65942B524BCED1800788BC1 /* AlanSDK.framework */,
 			);
 			path = Alan;
 			sourceTree = "<group>";
@@ -110,8 +118,8 @@
 				F6F7438524BB7CCE0077B514 /* Sources */,
 				F6F7438624BB7CCE0077B514 /* Frameworks */,
 				F6F7438724BB7CCE0077B514 /* Resources */,
-				F6F743B924BBCD090077B514 /* Embed Frameworks */,
 				F6F743BA24BBCE680077B514 /* ShellScript */,
+				F65942B424BCEC2400788BC1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
